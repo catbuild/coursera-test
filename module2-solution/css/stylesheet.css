@@ -1,1 +1,59 @@
+h1 {
+  text-align: center;
+}
 
+.box {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid black;
+  margin: 15px auto;
+  max-width: 400px;
+  background: #AAAAAA;
+}
+
+.box p {
+  margin: 55px 15px 15px 21px;
+}
+
+.text-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: #7A7A7A;
+  padding: 7px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 150%;
+}
+
+.second-box .text-title {
+  background: #ABCDEF;
+}
+
+.third-box .text-title {
+  background: #FEDCBA;
+}
+
+@media (min-width:768px) {
+  .box {
+    width: 48%;
+    margin: 1%;
+    float: left;
+    max-width: none;
+  }
+  .box.third-box {
+    width: 98%;
+  }
+}
+
+@media (min-width:992px) {
+  .box {
+    width: 31.33%;
+    margin: 1%;
+  }
+  .box.third-box {
+    width: 31.33%;
+  }
+}
